@@ -1,6 +1,6 @@
 {
-  "name": "app-demo",
-  "short_name": "app-demo",
+  "name": "weatherapp",
+  "short_name": "weatherapp",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",

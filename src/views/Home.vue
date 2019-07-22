@@ -1,18 +1,30 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <SearchBar/>
+    <DayForecastTab/>
+    <Weather/>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Weather from '@/components/Weather.vue'
+import SearchBar from '@/components/SearchBar.vue'
+import DayForecastTab from '@/components/DayForecastTab.vue'
 
 export default {
   name: 'home',
   components: {
-    HelloWorld
+    Weather,
+    SearchBar,
+    DayForecastTab
+  },
+  mounted(){
   }
 }
 </script>
+<style scoped lang="scss">
+.homepageLogo {
+  padding-top: 1%;
+  width: 20%;
+}
+</style>
